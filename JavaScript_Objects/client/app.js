@@ -61,5 +61,22 @@ Object.defineProperty(o, 'fullName', {
 
 
 
+Parent = {
+	toString: function(){
+		return this.firstName + ' ' + this.lastName;
+	}
+};
+
+
+Child = {
+	firstName: 'Evented',
+	lastName: 'Mind'
+};
+
+// Add parent object to child object
+Child.__proto__ = Parent;
+
+
+
 
 
