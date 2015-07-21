@@ -59,14 +59,19 @@ Object.defineProperty(o, 'fullName', {
 });
 
 
-
-
-Parent = {
+SuperParent = {
 	toString: function(){
-		return this.firstName + ' ' + this.lastName;
+		return 'SuperParent';
 	}
 };
 
+Parent = {
+	// toString: function(){
+	// 	return this.firstName + ' ' + this.lastName;
+	// }
+};
+
+Parent.__proto__ = SuperParent;
 
 Child = {
 	firstName: 'Evented',
