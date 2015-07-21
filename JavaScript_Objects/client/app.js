@@ -47,10 +47,12 @@ o = {
 };
 
 Object.defineProperty(o, 'fullName', {
-	value: 'Default value',
-	writable: true,
 	enumerable: true,
-	configurable: true
+	configurable: true,
+	get: function(){
+		console.log('Getting the full name');
+		return this.firstName + ' ' + this.lastName;
+	}
 });
 
 
