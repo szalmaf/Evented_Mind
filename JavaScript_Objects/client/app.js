@@ -42,12 +42,15 @@ person = new Person();
 
 // Configuring object properties
 o = {
-	firstName: 'Evented';
-	lastName: 'Mind';
+	firstName: 'Evented',
+	lastName: 'Mind'
 };
 
 Object.defineProperty(o, 'fullName', {
-	value: 'Default value'
+	value: 'Default value',
+	writable: true,
+	enumerable: true,
+	configurable: true
 });
 
 
