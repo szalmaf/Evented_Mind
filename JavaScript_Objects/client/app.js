@@ -51,7 +51,10 @@ Object.defineProperty(o, 'fullName', {
 	configurable: true,
 	get: function(){
 		console.log('Getting the full name');
-		return this.firstName + ' ' + this.lastName;
+		return this._fullName;
+	},
+	set: function(value){
+		this._fullName = value + '_modified';
 	}
 });
 
