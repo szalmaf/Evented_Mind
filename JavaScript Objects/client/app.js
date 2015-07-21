@@ -1,6 +1,9 @@
 // Object literal syntax using curly braces to create and object
 person = {};
 
+// Create object using the Object constructor
+person = new Object();
+
 // Add 'name' property to object with the value "Chris"
 // Properties are name-value pairs
 // person.name = "Chris;"
