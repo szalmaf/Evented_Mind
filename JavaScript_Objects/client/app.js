@@ -66,9 +66,9 @@ SuperParent = {
 };
 
 Parent = {
-	// toString: function(){
-	// 	return this.firstName + ' ' + this.lastName;
-	// }
+	toString: function(){
+		return this.firstName + ' ' + this.lastName;
+	}
 };
 
 Parent.__proto__ = SuperParent;
