@@ -83,5 +83,11 @@ Child.__proto__ = Parent;
 
 
 
+// Prototypes
+// Date.rototype
+// Number.prototype
+// Array.prototype
+// Boolean.prototype
+myObject = Object.create(Date.prototype);
 
 
