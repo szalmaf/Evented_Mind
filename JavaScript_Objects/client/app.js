@@ -59,6 +59,7 @@ Object.defineProperty(o, 'fullName', {
 });
 
 
+// Object inheritance
 SuperParent = {
 	toString: function(){
 		return 'SuperParent';
@@ -90,4 +91,14 @@ Child.__proto__ = Parent;
 // Boolean.prototype
 myObject = Object.create(Date.prototype);
 
+// Using constructor functions
+Pson = function(firstName, lastName){
+	this.firstName = firstName;
+	this.lastName = lastName;
+};
 
+Pson.prototype.toString = function(){
+	return this.firstName + ' ' + this.lastName;
+};
+
+pson = new Pson('Evented', 'Mind');
